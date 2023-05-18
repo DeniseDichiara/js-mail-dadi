@@ -27,10 +27,8 @@ const userMail =  document.getElementById('user-mail');
 
 //! Verificare se l'utente è nella lista
 
-if ( userMail.value == listEmail.value){
+if ( userMail.lenght === listEmail.lenght){
     console.log('ENJOY');
-}else if (userMail != listEmail){
+}else {
     console.log('DORY...AGAIN, you forget it again?');
-}else{
-    console.log('Still empty :)');
 }
