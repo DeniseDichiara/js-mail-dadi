@@ -20,15 +20,21 @@ for(i = 1; i <= 6; i ++){
 
 //todo Creata la variabile utente e la lista da confrontare
 
-const listEmail = ['lilo@gmail.com', 'stitch@gmail.com', 'Nani@gmail.com', 'CobraBubbles@gmail.com', 'Duchessa@gmail.com', 'Groviera@gmail.com', 'Romeo@gmail.com', 'Minuo@gmail.com', 'Matisse@gmail.com', 'Bizet@gmail.com']
+const pplEmail = ['lilo@gmail.com', 'stitch@gmail.com', 'Nani@gmail.com', 'CobraBubbles@gmail.com', 'Duchessa@gmail.com', 'Groviera@gmail.com', 'Romeo@gmail.com', 'Minuo@gmail.com', 'Matisse@gmail.com', 'Bizet@gmail.com']
 
-const userMail =  document.getElementById('user-mail');
+let userMail =  prompt ('Enter your email')
 
+let correct = false
 
-//! Verificare se l'utente è nella lista
+for(let i = 0; i < pplEmail; i++){
 
-if ( userMail.lenght === listEmail.lenght){
+    if(pplEmail[i] === userMail){
+        correct = true
+    }
+}
+ if(correct){
     console.log('ENJOY');
 }else {
     console.log('DORY...AGAIN, you forget it again?');
 }
+
